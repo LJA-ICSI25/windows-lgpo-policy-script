@@ -1,0 +1,47 @@
+{
+  "PasswordPolicy": {
+    "MinimumPasswordAgeDays": 1,
+    "MaximumPasswordAgeDays": 60,
+    "MinimumPasswordLength": 14,
+    "PasswordHistoryCount": 24,
+    "ComplexityEnabled": true,
+    "ReversibleEncryptionEnabled": false
+  },
+  "LockoutPolicy": {
+    "LockoutThreshold": 5,
+    "LockoutDurationMinutes": 15,
+    "ResetLockoutCounterMinutes": 15
+  },
+  "SecurityOptions": {
+    "DontDisplayLastUserName": true,
+    "DisableDomainCreds": true,
+    "RestrictAnonymous": 1,
+    "RestrictAnonymousSam": 1,
+    "EveryoneIncludesAnonymous": 0
+  },
+  "AuditPolicy": {
+    "Account Logon": "Success and Failure",
+    "Account Management": "Success and Failure",
+    "Detailed Tracking": "Success",
+    "DS Access": "Failure",
+    "Logon/Logoff": "Success and Failure",
+    "Object Access": "Failure",
+    "Policy Change": "Success and Failure",
+    "Privilege Use": "Failure",
+    "System": "Success and Failure"
+  },
+  "Defender": {
+    "DisableAntiSpyware": 0,
+    "DisableRealtimeMonitoring": 0,
+    "PUAProtection": 1,
+    "EnableNetworkProtection": 1,
+    "EnableControlledFolderAccess": 1
+  },
+  "Edge": {
+    "PasswordManagerEnabled": 0,
+    "AutofillAddressEnabled": 0,
+    "AutofillCreditCardEnabled": 0,
+    "SmartScreenEnabled": 1,
+    "SmartScreenPuaEnabled": 1
+  }
+}
